@@ -7,8 +7,11 @@
 }
 
 .chat-container {
-  width: 75%; /* Adjusted width */
-  max-width: 800px; /* Added max-width for responsiveness */
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 800px;
+  max-height: 90%; /* Adjusted max-height for responsiveness */
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -17,9 +20,10 @@
 }
 
 .chat-box {
-  max-height: 75%;
+  flex: 1;
   overflow-y: auto;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .message {
@@ -44,6 +48,9 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  border-top: 1px solid #ddd;
+  background: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .input-form input {

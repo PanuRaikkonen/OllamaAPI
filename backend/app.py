@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://192.168.1.251:3000"}})
 
-LLM_URL = "http://192.168.1.251:11434/api/generate"
+LLM_URL = "http://192.168.1.251:11434/api/generate" #Ollama API url
 context = None
 
 @app.route('/api/generate', methods=['POST', 'OPTIONS'])

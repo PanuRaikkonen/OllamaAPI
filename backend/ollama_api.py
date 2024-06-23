@@ -9,7 +9,8 @@ headers = {
 user_input = input("$ ")
 
 data = {
-    "model": "llama2-uncensored", #LLM Model
+    #"model": "llama2-uncensored", #LLM Model
+    "model": "llama3", #LLM Model
     "prompt": user_input, #User input
     "stream": False
 }
